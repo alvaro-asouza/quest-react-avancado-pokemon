@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import '../../components/styles/globals.css';
 import '../../components/styles/styles.css';
+import ButtonLoaderMore from "../layout/ButtonLoaderMore";
 
 function Pokemons() {
     const [pokemons, setPokemons] = useState([]);
@@ -47,7 +48,10 @@ function Pokemons() {
                     </li>
                 )
                 )}
+                
+
             </ul>
+            <ButtonLoaderMore />
         </div>
     )
 }
